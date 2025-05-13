@@ -14,16 +14,16 @@ Set up the ESP32-CAM and Arduino IDE environment. Execute both the WiFiScanner a
 ## Links to documentation
 
 ##### Video 1: 
-Arduino Setup for ESP32: ESP32 Install Guide
+[Arduino Setup for ESP32: ](https://youtu.be/kh9zYZoDX64)
 
 ##### Other Link: 
-Video Guide: YouTube – ESP32-CAM Setup
+[Video Guide: YouTube: ](https://youtu.be/4inE-n6kXSE)
 
 
 ## Steps I followed
 Installed Arduino IDE (latest version).
 
-Added ESP32 board URL to File > Preferences > Additional Board Manager URLs:
+Added ESP32 board URL to File > Preferences > Additional Board Manager URLs: 
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
 Opened Boards Manager, searched for ESP32, and installed the package.
