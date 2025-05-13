@@ -28,15 +28,13 @@ Currently this example supports the following targets.
 * Select the COM port: `Devices` or setting the `upload_port` option on the `platformio.ini` file.
 
 ## Log Output
-14:25:28.643 -> Scan start
-14:25:31.268 -> Scan done
-14:25:31.268 -> 5 networks found
-14:25:31.268 -> Nr | SSID                             | RSSI | CH | Encryption
-14:25:31.268 ->  1 | MyOptimum 2b18bf                 |  -65 |  1 | WPA2
-14:25:31.268 ->  2 | MyAltice 08e9e1_EXT              |  -79 |  1 | WPA2
-14:25:31.268 ->  3 | MyAltice 08e9e1                  |  -79 |  1 | WPA2
-14:25:31.318 ->  4 | myoptimumOf145                   |  -88 |  1 | WPA2+WPA3
-14:25:31.318 ->  5 | Verizon_YJ66JC                   |  -93 | 11 | WPA2
+5 networks found
+Nr | SSID                             | RSSI | CH | Encryption
+ 1 | MyOptimum 2b18bf                 |  -66 |  1 | WPA2
+ 2 | MyAltice 08e9e1_EXT              |  -80 |  1 | WPA2
+ 3 | MyAltice 08e9e1                  |  -80 |  1 | WPA2
+ 4 | myoptimumOf145                   |  -88 |  1 | WPA2+WPA3
+ 5 | Verizon_YJ66JC                   |  -93 | 11 | WPA2
 
 ## Equipment
 * [ESP32Cam](https://www.amazon.com/Aideepen-ESP32-CAM-Bluetooth-ESP32-CAM-MB-Arduino/dp/B08P2578LV/ref=sr_1_3?crid=4FY0ECFW0ZX7&keywords=ESP32+Cam&qid=1678902050&sprefix=esp32+cam%2Caps%2C240&sr=8-3)
