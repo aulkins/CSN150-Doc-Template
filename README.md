@@ -4,7 +4,7 @@
 ESP32 Introduction
 
 ## Purpose
-Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner". 
+Set up the ESP32-CAM and Arduino IDE environment. Execute both the WiFiScanner and CameraWebServer sketches to verify wireless connectivity and camera functionality. 
 
 ## Equipment
 * [ESP32Cam](https://www.amazon.com/Aideepen-ESP32-CAM-Bluetooth-ESP32-CAM-MB-Arduino/dp/B08P2578LV/ref=sr_1_3?crid=4FY0ECFW0ZX7&keywords=ESP32+Cam&qid=1678902050&sprefix=esp32+cam%2Caps%2C240&sr=8-3)
@@ -14,23 +14,39 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 ## Links to documentation
 
 ##### Video 1: 
+Arduino Setup for ESP32: ESP32 Install Guide
 
-##### Other Links: 
+##### Other Link: 
+Video Guide: YouTube – ESP32-CAM Setup
 
 
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
+Installed Arduino IDE (latest version).
+
+Added ESP32 board URL to File > Preferences > Additional Board Manager URLs:
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+Opened Boards Manager, searched for ESP32, and installed the package.
+
+Connected ESP32-CAM using USB/FTDI adapter.
+
+Selected board: AI Thinker ESP32-CAM under Tools > Board.
+
+Opened CameraWebServer example from File > Examples > ESP32 > Camera > CameraWebServer.
+
+Entered WiFi credentials (ssid, password) in the code.
+
+Verified that CAMERA_MODEL_AI_THINKER was uncommented.
+
+Uploaded the sketch.
+
+Opened Serial Monitor at 115200 baud to read the ESP32 IP address.
+
+Entered the IP address in a browser — the camera stream loaded successfully.
 
 ## Problems
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
-
-1. E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
-Camera init failed with error 0x105
- How did I solve: 
-
-### Example Problem
-1. Arduino code will not load on ESP32 Cam.
-   Answer: Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
+No problems encountered during setup or upload.
 
 
 ## Final Report
+Arduino IDE and ESP32-CAM were set up without any issues.
